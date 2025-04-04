@@ -10,10 +10,10 @@
 
 <img src="./assets/SART1_teaser_final.jpg" alt="main" style="zoom: 33%;" />
 
-**STAR-1** is a high-quality safety dataset designed to enhance safety alignment in large reasoning models (LRMs) like DeepSeek-R1.
+[**STAR-1**](https://huggingface.co/datasets/UCSC-VLAA/STAR-1) is a high-quality safety dataset designed to enhance safety alignment in large reasoning models (LRMs) like DeepSeek-R1.
 
 - Built on the principles of diversity, deliberative reasoning, and rigorous filtering, STAR-1 integrates and refines data from multiple sources to provide policy-grounded reasoning samples.
-- The dataset contains 1,000 carefully selected examples, each aligned with best safety practices through GPT-4o-based evaluation.
+- The dataset contains **1,000** carefully selected examples, each aligned with best safety practices through GPT-4o-based evaluation.
 - Fine-tuning with STAR-1 leads to significant safety improvements across multiple benchmarks, with minimal impact on reasoning capabilities.
 
 
