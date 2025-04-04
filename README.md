@@ -1,4 +1,4 @@
-# STAR-1: Safer Alignment of Reasoning LLMs with 1K Data
+# 🌟 STAR-1: Safer Alignment of Reasoning LLMs with 1K Data
 
 <p align="center">
 📃 <a href="https://arxiv.org/abs/2504.01903" target="_blank">Paper</a> ｜🤗 <a href="https://huggingface.co/datasets/UCSC-VLAA/STAR-1" target="_blank">STAR-1 Data</a> | 🤗 <a href="https://huggingface.co/collections/UCSC-VLAA/star-1-67edda2a042e8ba3e955e522" target="_blank">STAR-1 Model</a> |  📚 <a href="https://ucsc-vlaa.github.io/STAR-1/" target="_blank">Project Page</a>
@@ -24,7 +24,7 @@
 |------------|----------------|----------------------------------------------------------------------|
 | STAR-1     | 1K             | 🤗 [UCSC-VLAA/STAR-1](https://huggingface.co/datasets/UCSC-VLAA/STAR-1) |
 | STAR 41K   | 41K            | 🤗 [UCSC-VLAA/STAR-41K](https://huggingface.co/datasets/UCSC-VLAA/STAR-41K) |
-| STAR-benign-915   | 41K            | 🤗 [UCSC-VLAA/STAR-benign-915](https://huggingface.co/datasets/UCSC-VLAA/STAR-benign-915) |
+| STAR-benign-915   | 915            | 🤗 [UCSC-VLAA/STAR-benign-915](https://huggingface.co/datasets/UCSC-VLAA/STAR-benign-915) |
 
 
 
