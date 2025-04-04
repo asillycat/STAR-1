@@ -24,7 +24,7 @@
 |------------|----------------|----------------------------------------------------------------------|
 | STAR-1     | 1K             | 🤗 [UCSC-VLAA/STAR-1](https://huggingface.co/datasets/UCSC-VLAA/STAR-1) |
 | STAR 41K   | 41K            | 🤗 [UCSC-VLAA/STAR-41K](https://huggingface.co/datasets/UCSC-VLAA/STAR-41K) |
-| STAR-benign-915   | 41K            | 🤗 [UCSC-VLAA/STAR-benign-915](https://huggingface.co/datasets/UCSC-VLAA/STAR-benign-915) |
+| STAR-benign-915   | 915            | 🤗 [UCSC-VLAA/STAR-benign-915](https://huggingface.co/datasets/UCSC-VLAA/STAR-benign-915) |
 
 
 
