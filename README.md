@@ -180,6 +180,8 @@ Then you can combine the `star1_benign_filtered.json` with `star1_high.json`, an
 ## Acknowledgement
 This work is partially supported by a gift from Open Philanthropy. We thank the NAIRR Pilot Program and the Microsoft Accelerate Foundation Models Research Program for supporting our computing needs.
 
+LLNL co-authors were supported under Contract DE-AC52-07NA27344 with the U.S. Department of Energy and the LLNL-LDRD Program under Project No. 24-ERD-058. The United States Government retains, and the publisher, by accepting the article for publication, acknowledges that the United States Government retains a non-exclusive, paid-up, irrevocable, world-wide license to publish or reproduce the published form of this manuscript, or allow others to do so, for United States Government purposes.
+
 
 ## Citation
 ```
