@@ -22,20 +22,20 @@
 
 | Dataset    | Num. of Sample | URL                                                                 |
 |------------|----------------|----------------------------------------------------------------------|
-| STAR-1     | 1K             | [UCSC-VLAA/STAR-1](https://huggingface.co/datasets/UCSC-VLAA/STAR-1) |
-| STAR 41K   | 41K            | [UCSC-VLAA/STAR-41K](https://huggingface.co/datasets/UCSC-VLAA/STAR-41K) |
-| STAR-benign-915   | 41K            | [UCSC-VLAA/STAR-benign-915](https://huggingface.co/datasets/UCSC-VLAA/STAR-benign-915) |
+| STAR-1     | 1K             | 🤗 [UCSC-VLAA/STAR-1](https://huggingface.co/datasets/UCSC-VLAA/STAR-1) |
+| STAR 41K   | 41K            | 🤗 [UCSC-VLAA/STAR-41K](https://huggingface.co/datasets/UCSC-VLAA/STAR-41K) |
+| STAR-benign-915   | 41K            | 🤗 [UCSC-VLAA/STAR-benign-915](https://huggingface.co/datasets/UCSC-VLAA/STAR-benign-915) |
 
 
 
 ### Model
 | Model                          | Type                                      | URL                                                                                   |
 |--------------------------------|-------------------------------------------|----------------------------------------------------------------------------------------|
-| `STAR1`-R1-Distill-1.5B        | R1-Distill-Qwen-1.5B trained on STAR-1    | [UCSC-VLAA/STAR1-R1-Distill-1.5B](https://huggingface.co/UCSC-VLAA/STAR1-R1-Distill-1.5B) |
-| `STAR1`-R1-Distill-7B          | R1-Distill-Qwen-7B trained on STAR-1      | [UCSC-VLAA/STAR1-R1-Distill-7B](https://huggingface.co/UCSC-VLAA/STAR1-R1-Distill-7B)     |
-| `STAR1`-R1-Distill-8B          | R1-Distill-Llama-8B trained on STAR-1     | [UCSC-VLAA/STAR1-R1-Distill-8B](https://huggingface.co/UCSC-VLAA/STAR1-R1-Distill-8B)     |
-| `STAR1`-R1-Distill-14B         | R1-Distill-Qwen-14B trained on STAR-1     | [UCSC-VLAA/STAR1-R1-Distill-14B](https://huggingface.co/UCSC-VLAA/STAR1-R1-Distill-14B)   |
-| `STAR1`-R1-Distill-32B         | R1-Distill-Qwen-32B trained on STAR-1     | [UCSC-VLAA/STAR1-R1-Distill-32B](https://huggingface.co/UCSC-VLAA/STAR1-R1-Distill-32B)   |
+| `STAR1`-R1-Distill-1.5B        | R1-Distill-Qwen-1.5B trained on STAR-1    | 🤗 [UCSC-VLAA/STAR1-R1-Distill-1.5B](https://huggingface.co/UCSC-VLAA/STAR1-R1-Distill-1.5B) |
+| `STAR1`-R1-Distill-7B          | R1-Distill-Qwen-7B trained on STAR-1      | 🤗 [UCSC-VLAA/STAR1-R1-Distill-7B](https://huggingface.co/UCSC-VLAA/STAR1-R1-Distill-7B)     |
+| `STAR1`-R1-Distill-8B          | R1-Distill-Llama-8B trained on STAR-1     | 🤗 [UCSC-VLAA/STAR1-R1-Distill-8B](https://huggingface.co/UCSC-VLAA/STAR1-R1-Distill-8B)     |
+| `STAR1`-R1-Distill-14B         | R1-Distill-Qwen-14B trained on STAR-1     | 🤗 [UCSC-VLAA/STAR1-R1-Distill-14B](https://huggingface.co/UCSC-VLAA/STAR1-R1-Distill-14B)   |
+| `STAR1`-R1-Distill-32B         | R1-Distill-Qwen-32B trained on STAR-1     | 🤗 [UCSC-VLAA/STAR1-R1-Distill-32B](https://huggingface.co/UCSC-VLAA/STAR1-R1-Distill-32B)   |
 
 
 ## Structure
