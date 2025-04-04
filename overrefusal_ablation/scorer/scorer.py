@@ -104,7 +104,7 @@ def main():
         max_completion_tokens=1024,
     )
 
-    save_pth = f"./datasets/star1_benigh_with_cot_ds_tmp.json"
+    save_pth = f"./datasets/star1_benign_with_cot_ds_tmp.json"
     if os.path.exists(save_pth):
         ids = [json.loads(line)['id'] for line in open(save_pth)]
     else:
@@ -113,19 +113,19 @@ def main():
     print(f'got {len(ids)} sucessful items')
     
     # load errors
-    error_pth = f"./datasets/star1_benigh_with_cot_ds_error_tmp.json"
+    error_pth = f"./datasets/star1_benign_with_cot_ds_error_tmp.json"
     if os.path.exists(error_pth):
         ids += [json.loads(line)['id'] for line in open(error_pth)]
 
     print(f'got {len(ids)-n_success} error items')
     
 
-    all_data = json.load(open('./datasets/star1_benigh_with_cot.json'))
+    all_data = json.load(open('./datasets/star1_benign_with_cot.json'))
     filtered_data = [line for line in all_data if line['id'] not in ids][:5]
     # filtered_data = [line for line in all_data if line['id'] not in ids]
     print(f'got {len(filtered_data)} items to be generated, originally {len(all_data)} ')
     
-    record4r1call_path = "./datasets/star1_benigh_with_cot_record4r1call.json"
+    record4r1call_path = "./datasets/star1_benign_with_cot_record4r1call.json"
     if os.path.exists(record4r1call_path):
         record4r1call = json.load(open(record4r1call_path))
     else:
@@ -164,12 +164,12 @@ if __name__=="__main__":
     args = parser.parse_args()
     main()
     
-    save_pth = f"./datasets/star1_benigh_with_cot_ds_tmp.json"
+    save_pth = f"./datasets/star1_benign_with_cot_ds_tmp.json"
     if os.path.exists(save_pth):
         items = [json.loads(line) for line in open(save_pth)]
     else:
         items = []
-    with open("star1_benigh_with_score.json", "w") as f:
+    with open("star1_benign_with_score.json", "w") as f:
         json.dump(items, f)
         
         
@@ -185,5 +185,5 @@ if __name__=="__main__":
             item['source'] = '4o_rewrite'
             all_5.append(item)
             
-    with open("star1_benigh.json", 'w', encoding="utf-8") as f:
+    with open("star1_benign_filtered.json", 'w', encoding="utf-8") as f:
         json.dump(all_5, f, indent=4)

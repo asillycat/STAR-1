@@ -125,5 +125,5 @@ if __name__=="__main__":
         items = [json.loads(line) for line in open(save_pth)]
     else:
         items = []
-    with open("star1_benigh_with_cot.json", "w") as f:
+    with open("star1_benign_with_cot.json", "w") as f:
         json.dump(items, f)

@@ -20,9 +20,9 @@ mkdir wildjailbreak
 
 export model=$1 # DeepSeek-R1-Distill-Qwen-1.5B
 
-# export data=$2 # strongreject / jbbbehaviours / wildjailbreak / wildchat / xstest
+export data=$2 # strongreject / jbbbehaviours / wildjailbreak / wildchat / xstest
 
-export data=strongreject
+# export data=strongreject
 bash gen.sh $data ${model} &
 # export data=jbbbehaviours
 # bash gen.sh $data ${model} &
@@ -34,7 +34,7 @@ bash gen.sh $data ${model} &
 # bash gen.sh $data ${model} &
 
 
-export data=strongreject
+# export data=strongreject
 bash eval.sh $data ${model} Llama-Guard &
 # export data=jbbbehaviours
 # bash eval.sh $data ${model} Llama-Guard &
