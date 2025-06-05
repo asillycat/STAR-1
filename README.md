@@ -1,16 +1,10 @@
 # 🌟 STAR-1: Safer Alignment of Reasoning LLMs with 1K Data
 
-<p align="center">
-📃 <a href="https://arxiv.org/abs/2504.01903" target="_blank">Paper</a> ｜🤗 <a href="https://huggingface.co/datasets/UCSC-VLAA/STAR-1" target="_blank">STAR-1 Data</a> | 🤗 <a href="https://huggingface.co/collections/UCSC-VLAA/star-1-67edda2a042e8ba3e955e522" target="_blank">STAR-1 Model</a> |  📚 <a href="https://ucsc-vlaa.github.io/STAR-1/" target="_blank">Project Page</a>
-</p>
-
-[Zijun Wang](https://asillycat.github.io/), [Haoqin Tu](https://www.haqtu.me/), [Yuhan Wang](https://scholar.google.com/citations?user=Bo9xeqMAAAAJ&hl=en), [Juncheng Wu](https://chtholly17.github.io/), [Jieru Mei](https://meijieru.com/), [Brian R. Bartoldson](https://brianbartoldson.wordpress.com/), [Bhavya Kailkhura](https://people.llnl.gov/kailkhura1), [Cihang Xie](https://cihangxie.github.io/)
-
 ## Introduction
 
 <img src="./assets/SART1_teaser_final.jpg" alt="main" style="zoom: 33%;" />
 
-[**STAR-1**](https://huggingface.co/datasets/UCSC-VLAA/STAR-1) is a high-quality safety dataset designed to enhance safety alignment in large reasoning models (LRMs) like DeepSeek-R1.
+**STAR-1** is a high-quality safety dataset designed to enhance safety alignment in large reasoning models (LRMs) like DeepSeek-R1.
 
 - Built on the principles of diversity, deliberative reasoning, and rigorous filtering, STAR-1 integrates and refines data from multiple sources to provide policy-grounded reasoning samples.
 - The dataset contains **1,000** carefully selected examples, each aligned with best safety practices through GPT-4o-based evaluation.
@@ -20,22 +14,22 @@
 ## Artifacts
 ### Data
 
-| Dataset    | Num. of Sample | URL                                                                 |
-|------------|----------------|----------------------------------------------------------------------|
-| STAR-1     | 1K             | 🤗 [UCSC-VLAA/STAR-1](https://huggingface.co/datasets/UCSC-VLAA/STAR-1) |
-| STAR 41K   | 41K            | 🤗 [UCSC-VLAA/STAR-41K](https://huggingface.co/datasets/UCSC-VLAA/STAR-41K) |
-| STAR-benign-915   | 915            | 🤗 [UCSC-VLAA/STAR-benign-915](https://huggingface.co/datasets/UCSC-VLAA/STAR-benign-915) |
+| Dataset    | Num. of Sample |
+|------------|----------------|
+| STAR-1     | 1K             |
+| STAR 41K   | 41K            |
+| STAR-benign-915   | 915            |
 
 
 
 ### Model
-| Model                          | Type                                      | URL                                                                                   |
-|--------------------------------|-------------------------------------------|----------------------------------------------------------------------------------------|
-| `STAR1`-R1-Distill-1.5B        | R1-Distill-Qwen-1.5B trained on STAR-1    | 🤗 [UCSC-VLAA/STAR1-R1-Distill-1.5B](https://huggingface.co/UCSC-VLAA/STAR1-R1-Distill-1.5B) |
-| `STAR1`-R1-Distill-7B          | R1-Distill-Qwen-7B trained on STAR-1      | 🤗 [UCSC-VLAA/STAR1-R1-Distill-7B](https://huggingface.co/UCSC-VLAA/STAR1-R1-Distill-7B)     |
-| `STAR1`-R1-Distill-8B          | R1-Distill-Llama-8B trained on STAR-1     | 🤗 [UCSC-VLAA/STAR1-R1-Distill-8B](https://huggingface.co/UCSC-VLAA/STAR1-R1-Distill-8B)     |
-| `STAR1`-R1-Distill-14B         | R1-Distill-Qwen-14B trained on STAR-1     | 🤗 [UCSC-VLAA/STAR1-R1-Distill-14B](https://huggingface.co/UCSC-VLAA/STAR1-R1-Distill-14B)   |
-| `STAR1`-R1-Distill-32B         | R1-Distill-Qwen-32B trained on STAR-1     | 🤗 [UCSC-VLAA/STAR1-R1-Distill-32B](https://huggingface.co/UCSC-VLAA/STAR1-R1-Distill-32B)   |
+| Model                          | Type                                      | 
+|--------------------------------|-------------------------------------------|
+| `STAR1`-R1-Distill-1.5B        | R1-Distill-Qwen-1.5B trained on STAR-1    |
+| `STAR1`-R1-Distill-7B          | R1-Distill-Qwen-7B trained on STAR-1      |
+| `STAR1`-R1-Distill-8B          | R1-Distill-Llama-8B trained on STAR-1     |
+| `STAR1`-R1-Distill-14B         | R1-Distill-Qwen-14B trained on STAR-1     |
+| `STAR1`-R1-Distill-32B         | R1-Distill-Qwen-32B trained on STAR-1     |
 
 
 ## Structure
@@ -53,7 +47,7 @@
 
 ## Quick Start
 ```
-git clone https://github.com/UCSC-VLAA/STAR-1.git
+git clone url
 cd STAR-1
 pip install -e .
 ```
@@ -92,10 +86,10 @@ cp ../deliberative_reasoning/reasoning_generation/data_with_cot.json datasets/
 bash scorer.sh
 ```
 You will get:
-- A json file named `data_with_score.json` under `data_making/data_selection/` folder and this contains the 41K samples with 4o-based scores. This `data_with_score.json` is our [`
-STAR-41K`](https://huggingface.co/datasets/UCSC-VLAA/STAR-41K)
+- A json file named `data_with_score.json` under `data_making/data_selection/` folder and this contains the 41K samples with 4o-based scores. This `data_with_score.json` is our `
+STAR-41K`
 - A json file named `all_10.json` under `data_making/data_selection/` folder and this contains samples with full scores(10) on all criteria. (Sec. 2.3 - `Ensuring Accuracy`)
-- A json file named `star1_high.json` under `data_making/data_selection/` folder and this contains 1K samples selected according to balanced representation. (Sec. 2.3 - `Ensuring Diversity`). This `star1_high.json` is our final [`STAR-1`](https://huggingface.co/datasets/UCSC-VLAA/STAR-1).
+- A json file named `star1_high.json` under `data_making/data_selection/` folder and this contains 1K samples selected according to balanced representation. (Sec. 2.3 - `Ensuring Diversity`). This `star1_high.json` is our final `STAR-1`.
 
 ## Training (Sec 3.1)
 ```
@@ -170,29 +164,11 @@ bash scorer.sh
 ```
 You will get 
 - A json file named `star1_benign_with_score.json` under `overrefusal_ablation/scorer/` folder and this contains the 1K benign variants with 4o-based scores.
-- A json file named `star1_benign_filtered.json` under `overrefusal_ablation/scorer/` folder and this contains the benign variants with full scores(5) on all criteria. This `star1_benign_filtered.json` is our final [`
-STAR-benign-915 `](https://huggingface.co/datasets/UCSC-VLAA/STAR-benign-915).
+- A json file named `star1_benign_filtered.json` under `overrefusal_ablation/scorer/` folder and this contains the benign variants with full scores(5) on all criteria. This `star1_benign_filtered.json` is our final `
+STAR-benign-915 `.
 
 ### Training and Benchmarking
 Then you can combine the `star1_benign_filtered.json` with `star1_high.json`, and use these 2K samples to sft a model and benchmark the finetuned model. The pipeline is the same as `Training` and `Evaluation` above.
-
-
-## Acknowledgement
-This work is partially supported by a gift from Open Philanthropy. We thank the NAIRR Pilot Program and the Microsoft Accelerate Foundation Models Research Program for supporting our computing needs.
-
-LLNL co-authors were supported under Contract DE-AC52-07NA27344 with the U.S. Department of Energy and the LLNL-LDRD Program under Project No. 24-ERD-058. The United States Government retains, and the publisher, by accepting the article for publication, acknowledges that the United States Government retains a non-exclusive, paid-up, irrevocable, world-wide license to publish or reproduce the published form of this manuscript, or allow others to do so, for United States Government purposes.
-
-
-## Citation
-```
-@article{wang2025star1saferalignmentreasoning,
-    title={STAR-1: Safer Alignment of Reasoning LLMs with 1K Data}, 
-    author={Zijun Wang and Haoqin Tu and Yuhan Wang and Juncheng Wu and Jieru Mei and Brian R. Bartoldson and Bhavya Kailkhura and Cihang Xie},
-    year={2025},
-    journal = {arXiv preprint arXiv:2504.01903}
-}
-```
-
 
 
 

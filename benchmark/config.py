@@ -93,7 +93,7 @@ MODEL_CONFIG = {
     
     # STAR-1 model
     "DeepSeek-R1-Distill-Qwen-1.5B-STAR1": {
-        "model_path": "UCSC-VLAA/STAR1-R1-Distill-1.5B",
+        "model_path": "",
         "n_gpu": 2,
         "run_api": False,
         "dtype": "bfloat16",
@@ -102,7 +102,7 @@ MODEL_CONFIG = {
     },
     
     "DeepSeek-R1-Distill-Qwen-7B-STAR1": {
-        "model_path": "UCSC-VLAA/STAR1-R1-Distill-7B",
+        "model_path": "",
         "n_gpu": 2,
         "run_api": False,
         "dtype": "bfloat16",
@@ -111,7 +111,7 @@ MODEL_CONFIG = {
     },
     
     "DeepSeek-R1-Distill-Llama-8B-STAR1": {
-        "model_path": "UCSC-VLAA/STAR1-R1-Distill-8B",
+        "model_path": "",
         "n_gpu": 2,
         "run_api": False,
         "dtype": "bfloat16",
@@ -120,7 +120,7 @@ MODEL_CONFIG = {
     },
 
     "DeepSeek-R1-Distill-Qwen-14B-STAR1": {
-        "model_path": "UCSC-VLAA/STAR1-R1-Distill-14B",
+        "model_path": "",
         "n_gpu": 2,
         "run_api": False,
         "dtype": "bfloat16",
@@ -129,7 +129,7 @@ MODEL_CONFIG = {
     },
     
     "DeepSeek-R1-Distill-Qwen-32B-STAR1": {
-        "model_path": "UCSC-VLAA/STAR1-R1-Distill-32B",
+        "model_path": "",
         "n_gpu": 2,
         "run_api": False,
         "dtype": "bfloat16",

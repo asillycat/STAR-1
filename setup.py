@@ -29,7 +29,7 @@ with open('requirements.txt', 'r') as requirements:
           packages=find_packages(),
           description='library for STAR-1',
           python_requires='>=3.11',
-          author='Zijun Wang, Haoqin Tu, Yuhan Wang',
+          author='',
           author_email='',
           classifiers=[
               'Programming Language :: Python :: 3',
