@@ -2,8 +2,6 @@
 
 ## Introduction
 
-<img src="./assets/SART1_teaser_final.jpg" alt="main" style="zoom: 33%;" />
-
 **STAR-1** is a high-quality safety dataset designed to enhance safety alignment in large reasoning models (LRMs) like DeepSeek-R1.
 
 - Built on the principles of diversity, deliberative reasoning, and rigorous filtering, STAR-1 integrates and refines data from multiple sources to provide policy-grounded reasoning samples.
@@ -128,7 +126,7 @@ bash scripts.sh $model $data
 ```
 
 ### Reasoning Benchmark
-The code in Reasoning Benchmark is based on [`simple-evals`](https://github.com/openai/simple-evals) and modified.
+The code in Reasoning Benchmark is based on `simple-evals` and modified.
 ```
 cd benchmark/reasoning_benchmark
 bash run_all_evals.sh
